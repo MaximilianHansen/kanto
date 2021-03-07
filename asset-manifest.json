@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.f1426787.chunk.css",
-    "main.js": "/static/js/main.e34ba44e.chunk.js",
-    "main.js.map": "/static/js/main.e34ba44e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.04efd9e2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.04efd9e2.js.map",
-    "static/css/2.31461e4f.chunk.css": "/static/css/2.31461e4f.chunk.css",
-    "static/js/2.b9e3e4d2.chunk.js": "/static/js/2.b9e3e4d2.chunk.js",
-    "static/js/2.b9e3e4d2.chunk.js.map": "/static/js/2.b9e3e4d2.chunk.js.map",
-    "static/js/3.3b75a8e6.chunk.js": "/static/js/3.3b75a8e6.chunk.js",
-    "static/js/3.3b75a8e6.chunk.js.map": "/static/js/3.3b75a8e6.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.31461e4f.chunk.css.map": "/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.f1426787.chunk.css.map": "/static/css/main.f1426787.chunk.css.map",
-    "static/js/2.b9e3e4d2.chunk.js.LICENSE.txt": "/static/js/2.b9e3e4d2.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/pokemon-font.fc5c6728.woff"
+    "main.css": "/kanto/static/css/main.9c493a1d.chunk.css",
+    "main.js": "/kanto/static/js/main.e34ba44e.chunk.js",
+    "main.js.map": "/kanto/static/js/main.e34ba44e.chunk.js.map",
+    "runtime-main.js": "/kanto/static/js/runtime-main.28e6234c.js",
+    "runtime-main.js.map": "/kanto/static/js/runtime-main.28e6234c.js.map",
+    "static/css/2.31461e4f.chunk.css": "/kanto/static/css/2.31461e4f.chunk.css",
+    "static/js/2.b9e3e4d2.chunk.js": "/kanto/static/js/2.b9e3e4d2.chunk.js",
+    "static/js/2.b9e3e4d2.chunk.js.map": "/kanto/static/js/2.b9e3e4d2.chunk.js.map",
+    "static/js/3.3b75a8e6.chunk.js": "/kanto/static/js/3.3b75a8e6.chunk.js",
+    "static/js/3.3b75a8e6.chunk.js.map": "/kanto/static/js/3.3b75a8e6.chunk.js.map",
+    "index.html": "/kanto/index.html",
+    "static/css/2.31461e4f.chunk.css.map": "/kanto/static/css/2.31461e4f.chunk.css.map",
+    "static/css/main.9c493a1d.chunk.css.map": "/kanto/static/css/main.9c493a1d.chunk.css.map",
+    "static/js/2.b9e3e4d2.chunk.js.LICENSE.txt": "/kanto/static/js/2.b9e3e4d2.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/kanto/static/media/pokemon-font.fc5c6728.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.04efd9e2.js",
+    "static/js/runtime-main.28e6234c.js",
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.b9e3e4d2.chunk.js",
-    "static/css/main.f1426787.chunk.css",
+    "static/css/main.9c493a1d.chunk.css",
     "static/js/main.e34ba44e.chunk.js"
   ]
 }
