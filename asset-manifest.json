@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/kanto/static/css/main.9c493a1d.chunk.css",
-    "main.js": "/kanto/static/js/main.e34ba44e.chunk.js",
-    "main.js.map": "/kanto/static/js/main.e34ba44e.chunk.js.map",
+    "main.css": "/kanto/static/css/main.fe8b5291.chunk.css",
+    "main.js": "/kanto/static/js/main.cb71a1e7.chunk.js",
+    "main.js.map": "/kanto/static/js/main.cb71a1e7.chunk.js.map",
     "runtime-main.js": "/kanto/static/js/runtime-main.28e6234c.js",
     "runtime-main.js.map": "/kanto/static/js/runtime-main.28e6234c.js.map",
     "static/css/2.31461e4f.chunk.css": "/kanto/static/css/2.31461e4f.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.3b75a8e6.chunk.js.map": "/kanto/static/js/3.3b75a8e6.chunk.js.map",
     "index.html": "/kanto/index.html",
     "static/css/2.31461e4f.chunk.css.map": "/kanto/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.9c493a1d.chunk.css.map": "/kanto/static/css/main.9c493a1d.chunk.css.map",
+    "static/css/main.fe8b5291.chunk.css.map": "/kanto/static/css/main.fe8b5291.chunk.css.map",
     "static/js/2.b9e3e4d2.chunk.js.LICENSE.txt": "/kanto/static/js/2.b9e3e4d2.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kanto/static/media/pokemon-font.fc5c6728.woff"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.28e6234c.js",
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.b9e3e4d2.chunk.js",
-    "static/css/main.9c493a1d.chunk.css",
-    "static/js/main.e34ba44e.chunk.js"
+    "static/css/main.fe8b5291.chunk.css",
+    "static/js/main.cb71a1e7.chunk.js"
   ]
 }
