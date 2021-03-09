@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Pokecard from './Pokecard';
 import 'tachyons';
 import SearchBox from './SearchBox';
+import StatsList from './StatsList'
+
 
 
 
@@ -47,7 +49,7 @@ componentDidMount(){
                       .then((b)=>{  
                       this.setState({pokemonImage : b.sprites.front_default});
                       console.log(this.state.pokemonImage)
-                      this.setState({type : b.types[0].type.name});
+                      this.setState({type : b.types.map(x => x.type.name).join(" & ")});
                        })
                   }) 
             }
@@ -70,7 +72,8 @@ render() {
       
       this.state.pokemon = this.state.allPokemon[x];
       this.state.pokemonImage = this.state.pics[x].sprites.front_default
-      this.state.type = this.state.pics[x].types[0].type.name
+      this.state.type = this.state.pics[x].types.map(x => x.type.name).join(" & ")
+      console.log(this.state.type)
       this.state.id = x
      }}
 
@@ -81,7 +84,10 @@ render() {
         <div className="tc dib br3 pa4 ma5 shadow-5 bg-near-white">
           <h1 className="f1 ttu pa5">Gotta Catch Em' All</h1>
           <SearchBox searchChange={this.onInputchange}/>
-          <Pokecard no={this.state.id} pokemon = {this.state.pokemon} pokemonImage={this.state.pokemonImage} type={this.state.type} />
+            <div className='rowC'>
+            <Pokecard no={this.state.id} pokemon = {this.state.pokemon} pokemonImage={this.state.pokemonImage}  />
+            <StatsList no={this.state.id} type={this.state.type}/>
+            </div>
         </div>
       </div>
     );
