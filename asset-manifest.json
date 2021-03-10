@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kanto/static/css/main.fe8b5291.chunk.css",
-    "main.js": "/kanto/static/js/main.cb71a1e7.chunk.js",
-    "main.js.map": "/kanto/static/js/main.cb71a1e7.chunk.js.map",
+    "main.js": "/kanto/static/js/main.108e7fdb.chunk.js",
+    "main.js.map": "/kanto/static/js/main.108e7fdb.chunk.js.map",
     "runtime-main.js": "/kanto/static/js/runtime-main.28e6234c.js",
     "runtime-main.js.map": "/kanto/static/js/runtime-main.28e6234c.js.map",
     "static/css/2.31461e4f.chunk.css": "/kanto/static/css/2.31461e4f.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.b9e3e4d2.chunk.js",
     "static/css/main.fe8b5291.chunk.css",
-    "static/js/main.cb71a1e7.chunk.js"
+    "static/js/main.108e7fdb.chunk.js"
   ]
 }
