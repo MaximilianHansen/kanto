@@ -21,7 +21,10 @@ class App extends Component {
           searchNumber: '',
           allPokemon:[],
           pics:[],
-          id : '0'
+          id : '0',
+          moves : '',
+          pokemonWeight : '',
+          pokemonHeight : ''
       };
     this.onInputchange = this.onInputchange.bind(this);
     }
@@ -31,9 +34,10 @@ class App extends Component {
 componentDidMount(){    
 
     const fetcher1 = (x) => {
-      fetch('https://pokeapi.co/api/v2/pokemon/?limit=150')
+      fetch('https://pokeapi.co/api/v2/pokemon/?limit=386')
         .then(response => response.json())
         .then((a)=>{
+                    console.log(a)
                     this.setState({allPokemon : a.results})
                     this.setState({pokemon : a.results[x]})
                     var e = 0;
@@ -43,13 +47,18 @@ componentDidMount(){
                           this.state.pics.push(data)}) 
                           e++;
                         }
-                        while(e < 150);
+                        while(e < 386);
+                    console.log('1',this.state.pics)
                     fetch(this.state.pokemon.url)
                       .then(response => response.json())
                       .then((b)=>{  
                       this.setState({pokemonImage : b.sprites.front_default});
-                      console.log(this.state.pokemonImage)
+                      
                       this.setState({type : b.types.map(x => x.type.name).join(" & ")});
+                      this.setState({pokemonWeight : b.weight})
+                      this.setState({pokemonHeight : b.height})
+                      console.log(this.state.pokemonWeight)
+
                        })
                   }) 
             }
@@ -61,20 +70,26 @@ componentDidMount(){
 onInputchange(event) {
       this.setState({searchNumber : event.target.value});
       this.state.pics.sort(function(a, b) { 
-                    return a.order - b.order })   
+                    return a.id - b.id })   
   
    }
 
 render() {
     
     const fetcher = (x) => { 
-      if(x && x < 150) {
+      if(x && x < 386) {
       
       this.state.pokemon = this.state.allPokemon[x];
       this.state.pokemonImage = this.state.pics[x].sprites.front_default
       this.state.type = this.state.pics[x].types.map(x => x.type.name).join(" & ")
-      console.log(this.state.type)
       this.state.id = x
+      this.state.moves = this.state.pics[x].moves.map(x => x.move.name)
+      // console.log('1' ,this.state.moves)
+      console.log('2',this.state.pics)
+      this.state.pokemonWeight = this.state.pics[x].weight
+      this.state.pokemonHeight = this.state.pics[x].height
+
+
      }}
 
     fetcher(this.state.searchNumber)
@@ -86,7 +101,7 @@ render() {
           <SearchBox searchChange={this.onInputchange}/>
             <div className='rowC'>
             <Pokecard no={this.state.id} pokemon = {this.state.pokemon} pokemonImage={this.state.pokemonImage}  />
-            <StatsList no={this.state.id} type={this.state.type}/>
+            <StatsList no={this.state.id} type={this.state.type} weight={this.state.pokemonWeight} height ={this.state.pokemonHeight}/>
             </div>
         </div>
       </div>

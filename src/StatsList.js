@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const StatsList = ({no , type}) => {
+const StatsList = ({no , type, weight, height}) => {
     return(
         <div className= "tc">
             <div >
@@ -10,6 +10,8 @@ const StatsList = ({no , type}) => {
 
                         <h3 className="f5 tl ttu " >Index No. : {no}</h3>
                         <h3 className="f5 tl ttu lh-copy">Type : {type}</h3>
+                        <h3 className="f5 tl ttu lh-copy">Weight : {weight} Pounds</h3>
+                        <h3 className="f5 tl ttu lh-copy">Height : {height} Feet</h3>
                     </div>
             </div>
         </div>

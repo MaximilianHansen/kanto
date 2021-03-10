@@ -7,7 +7,7 @@ const SearchBox = ({searchChange}) => {
             <input 
                 type='search'
                 id= 'poke-search'
-                placeholder="1 -> 150"
+                placeholder="1 -> 385"
                 onChange={searchChange}
                 className = "f5"
                 />
