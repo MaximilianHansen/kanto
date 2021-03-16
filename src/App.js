@@ -1,10 +1,13 @@
 import './App.css';
 import React, { Component } from 'react';
-import Pokecard from './Pokecard';
+import Pokecard from './components/Pokecard/Pokecard';
 import 'tachyons';
-import SearchBox from './SearchBox';
-import StatsList from './StatsList'
-
+import SearchBox from './components/Searchbox/SearchBox';
+import StatsList from './components/Statslist/StatsList'
+import AllPokemonButton from './components/nav/AllPokemonButton';
+import PokeCardList from "./components/PokeCardList/PokeCardList";
+import Scroll from "./components/scroll/Scroll";
+import BackToSearchButton from './components/nav/BackToSearchButton';
 
 
 
@@ -24,7 +27,8 @@ class App extends Component {
           id : '0',
           moves : '',
           pokemonWeight : '',
-          pokemonHeight : ''
+          pokemonHeight : '',
+          route : 'search'
       };
     this.onInputchange = this.onInputchange.bind(this);
     }
@@ -48,6 +52,7 @@ componentDidMount(){
                           e++;
                         }
                         while(e < 386);
+                    
                     console.log('1',this.state.pics)
                     fetch(this.state.pokemon.url)
                       .then(response => response.json())
@@ -67,12 +72,29 @@ componentDidMount(){
 
 }
 
-onInputchange(event) {
+onInputchange = (event) => {
       this.setState({searchNumber : event.target.value});
       this.state.pics.sort(function(a, b) { 
                     return a.id - b.id })   
-  
    }
+
+buttonclick = (event) => {
+  this.setState({route : 'allpokemon'})
+  this.state.pics.sort(function(a, b) { 
+    return a.id - b.id })   
+}
+
+viewpokestats = () => {
+  this.setState({route : 'search'})
+}
+
+clicked = (value) => {
+  console.log('clicked')
+  console.log() 
+  this.setState({route : 'search'})
+  this.setState({searchNumber:value.target.id})
+}
+
 
 render() {
     
@@ -95,14 +117,30 @@ render() {
     fetcher(this.state.searchNumber)
 
     return( 
-      <div className= "tc">
-        <div className="tc dib br3 pa4 ma5 shadow-5 bg-near-white">
-          <h1 className="f1 ttu pa5">Gotta Catch Em' All</h1>
-          <SearchBox searchChange={this.onInputchange}/>
-            <div className='rowC'>
-            <Pokecard no={this.state.id} pokemon = {this.state.pokemon} pokemonImage={this.state.pokemonImage}  />
-            <StatsList no={this.state.id} type={this.state.type} weight={this.state.pokemonWeight} height ={this.state.pokemonHeight}/>
-            </div>
+      <div>
+        <div className= "tc">
+          <div className="dib br3 ma4 shadow-5 bg-near-white">
+            <h1 className=" f1 ttu pa3">Gotta Catch Em' All</h1>
+            {this.state.route === 'search' ? 
+            <div>
+              <SearchBox searchChange={this.onInputchange}/>
+              <AllPokemonButton buttonclick={this.buttonclick}/>
+              <div className='rowC'>
+                <Pokecard no={this.state.id} pokemon = {this.state.pokemon} pokemonImage={this.state.pokemonImage}  />
+                <StatsList no={this.state.id} type={this.state.type} weight={this.state.pokemonWeight} height ={this.state.pokemonHeight}/>
+              </div>
+            </div> 
+          
+            :  
+          
+            <div>
+              <BackToSearchButton buttonclick={this.viewpokestats}/>
+              <Scroll >
+                <PokeCardList clickedpoke={this.clicked} allPokemon = {this.state.allPokemon} pokemonImage={this.state.pics}/>
+              </Scroll>
+            </div> }
+            
+          </div>
         </div>
       </div>
     );

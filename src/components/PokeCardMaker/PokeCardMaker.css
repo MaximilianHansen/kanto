@@ -1,0 +1,7 @@
+.dib {
+    min-width: 250px;
+}
+
+.npe {
+    pointer-events: none;
+}
