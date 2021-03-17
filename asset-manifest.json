@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/kanto/static/css/main.fe8b5291.chunk.css",
-    "main.js": "/kanto/static/js/main.108e7fdb.chunk.js",
-    "main.js.map": "/kanto/static/js/main.108e7fdb.chunk.js.map",
-    "runtime-main.js": "/kanto/static/js/runtime-main.28e6234c.js",
-    "runtime-main.js.map": "/kanto/static/js/runtime-main.28e6234c.js.map",
+    "main.css": "/kanto/static/css/main.5ca87653.chunk.css",
+    "main.js": "/kanto/static/js/main.5c6e6d06.chunk.js",
+    "main.js.map": "/kanto/static/js/main.5c6e6d06.chunk.js.map",
+    "runtime-main.js": "/kanto/static/js/runtime-main.5747abaf.js",
+    "runtime-main.js.map": "/kanto/static/js/runtime-main.5747abaf.js.map",
     "static/css/2.31461e4f.chunk.css": "/kanto/static/css/2.31461e4f.chunk.css",
-    "static/js/2.b9e3e4d2.chunk.js": "/kanto/static/js/2.b9e3e4d2.chunk.js",
-    "static/js/2.b9e3e4d2.chunk.js.map": "/kanto/static/js/2.b9e3e4d2.chunk.js.map",
-    "static/js/3.3b75a8e6.chunk.js": "/kanto/static/js/3.3b75a8e6.chunk.js",
-    "static/js/3.3b75a8e6.chunk.js.map": "/kanto/static/js/3.3b75a8e6.chunk.js.map",
+    "static/js/2.dd119d57.chunk.js": "/kanto/static/js/2.dd119d57.chunk.js",
+    "static/js/2.dd119d57.chunk.js.map": "/kanto/static/js/2.dd119d57.chunk.js.map",
+    "static/js/3.7015caf1.chunk.js": "/kanto/static/js/3.7015caf1.chunk.js",
+    "static/js/3.7015caf1.chunk.js.map": "/kanto/static/js/3.7015caf1.chunk.js.map",
     "index.html": "/kanto/index.html",
     "static/css/2.31461e4f.chunk.css.map": "/kanto/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.fe8b5291.chunk.css.map": "/kanto/static/css/main.fe8b5291.chunk.css.map",
-    "static/js/2.b9e3e4d2.chunk.js.LICENSE.txt": "/kanto/static/js/2.b9e3e4d2.chunk.js.LICENSE.txt",
+    "static/css/main.5ca87653.chunk.css.map": "/kanto/static/css/main.5ca87653.chunk.css.map",
+    "static/js/2.dd119d57.chunk.js.LICENSE.txt": "/kanto/static/js/2.dd119d57.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kanto/static/media/pokemon-font.fc5c6728.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.28e6234c.js",
+    "static/js/runtime-main.5747abaf.js",
     "static/css/2.31461e4f.chunk.css",
-    "static/js/2.b9e3e4d2.chunk.js",
-    "static/css/main.fe8b5291.chunk.css",
-    "static/js/main.108e7fdb.chunk.js"
+    "static/js/2.dd119d57.chunk.js",
+    "static/css/main.5ca87653.chunk.css",
+    "static/js/main.5c6e6d06.chunk.js"
   ]
 }
