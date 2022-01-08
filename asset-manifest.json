@@ -1,26 +1,19 @@
 {
   "files": {
-    "main.css": "/kanto/static/css/main.5ca87653.chunk.css",
-    "main.js": "/kanto/static/js/main.5c6e6d06.chunk.js",
-    "main.js.map": "/kanto/static/js/main.5c6e6d06.chunk.js.map",
-    "runtime-main.js": "/kanto/static/js/runtime-main.5747abaf.js",
-    "runtime-main.js.map": "/kanto/static/js/runtime-main.5747abaf.js.map",
-    "static/css/2.31461e4f.chunk.css": "/kanto/static/css/2.31461e4f.chunk.css",
-    "static/js/2.dd119d57.chunk.js": "/kanto/static/js/2.dd119d57.chunk.js",
-    "static/js/2.dd119d57.chunk.js.map": "/kanto/static/js/2.dd119d57.chunk.js.map",
-    "static/js/3.7015caf1.chunk.js": "/kanto/static/js/3.7015caf1.chunk.js",
-    "static/js/3.7015caf1.chunk.js.map": "/kanto/static/js/3.7015caf1.chunk.js.map",
+    "main.css": "/kanto/static/css/main.c4281520.css",
+    "main.js": "/kanto/static/js/main.c1dfb581.js",
+    "static/js/787.ed97ff01.chunk.js": "/kanto/static/js/787.ed97ff01.chunk.js",
+    "static/media/pokemon-font.ttf": "/kanto/static/media/pokemon-font.902a87754b6e7822211d.ttf",
+    "static/media/pokemon-font.eot": "/kanto/static/media/pokemon-font.051bfeeea286c1e59021.eot",
+    "static/media/pokemon-font.woff": "/kanto/static/media/pokemon-font.fc5c67282de6b16d243b.woff",
+    "static/media/pokemon-font.woff2": "/kanto/static/media/pokemon-font.141d645428bbb45562f9.woff2",
     "index.html": "/kanto/index.html",
-    "static/css/2.31461e4f.chunk.css.map": "/kanto/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.5ca87653.chunk.css.map": "/kanto/static/css/main.5ca87653.chunk.css.map",
-    "static/js/2.dd119d57.chunk.js.LICENSE.txt": "/kanto/static/js/2.dd119d57.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/kanto/static/media/pokemon-font.fc5c6728.woff"
+    "main.c4281520.css.map": "/kanto/static/css/main.c4281520.css.map",
+    "main.c1dfb581.js.map": "/kanto/static/js/main.c1dfb581.js.map",
+    "787.ed97ff01.chunk.js.map": "/kanto/static/js/787.ed97ff01.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.5747abaf.js",
-    "static/css/2.31461e4f.chunk.css",
-    "static/js/2.dd119d57.chunk.js",
-    "static/css/main.5ca87653.chunk.css",
-    "static/js/main.5c6e6d06.chunk.js"
+    "static/css/main.c4281520.css",
+    "static/js/main.c1dfb581.js"
   ]
 }
