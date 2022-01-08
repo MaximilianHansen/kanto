@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kanto/static/css/main.c4281520.css",
-    "main.js": "/kanto/static/js/main.c1dfb581.js",
+    "main.js": "/kanto/static/js/main.71508d74.js",
     "static/js/787.ed97ff01.chunk.js": "/kanto/static/js/787.ed97ff01.chunk.js",
     "static/media/pokemon-font.ttf": "/kanto/static/media/pokemon-font.902a87754b6e7822211d.ttf",
     "static/media/pokemon-font.eot": "/kanto/static/media/pokemon-font.051bfeeea286c1e59021.eot",
@@ -9,11 +9,11 @@
     "static/media/pokemon-font.woff2": "/kanto/static/media/pokemon-font.141d645428bbb45562f9.woff2",
     "index.html": "/kanto/index.html",
     "main.c4281520.css.map": "/kanto/static/css/main.c4281520.css.map",
-    "main.c1dfb581.js.map": "/kanto/static/js/main.c1dfb581.js.map",
+    "main.71508d74.js.map": "/kanto/static/js/main.71508d74.js.map",
     "787.ed97ff01.chunk.js.map": "/kanto/static/js/787.ed97ff01.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4281520.css",
-    "static/js/main.c1dfb581.js"
+    "static/js/main.71508d74.js"
   ]
 }
