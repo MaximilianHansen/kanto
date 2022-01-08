@@ -13,11 +13,8 @@ import BackToSearchButton from './components/nav/BackToSearchButton';
 
 class App extends Component {
   constructor() {
-    
-
-
       super()
-      this.state ={
+      this.state = {
           pokemonImage:'',
           pokemon:'',
           type:'',
@@ -28,20 +25,21 @@ class App extends Component {
           moves : '',
           pokemonWeight : '',
           pokemonHeight : '',
-          route : 'search'
+          route : 'search',
+          mounted : false
       };
     this.onInputchange = this.onInputchange.bind(this);
     }
 
 
 
-componentDidMount(){    
+componentDidMount(){
 
     const fetcher1 = (x) => {
       fetch('https://pokeapi.co/api/v2/pokemon/?limit=386')
         .then(response => response.json())
         .then((a)=>{
-                    console.log(a)
+                    console.log("FETCHING")
                     this.setState({allPokemon : a.results})
                     this.setState({pokemon : a.results[x]})
                     var e = 0;
@@ -52,8 +50,6 @@ componentDidMount(){
                           e++;
                         }
                         while(e < 386);
-                    
-                    console.log('1',this.state.pics)
                     fetch(this.state.pokemon.url)
                       .then(response => response.json())
                       .then((b)=>{  
@@ -62,14 +58,13 @@ componentDidMount(){
                       this.setState({type : b.types.map(x => x.type.name).join(" & ")});
                       this.setState({pokemonWeight : b.weight})
                       this.setState({pokemonHeight : b.height})
-                      console.log(this.state.pokemonWeight)
-
+                      this.setState({mounted:true})
                        })
                   }) 
             }
                   
       fetcher1(0) 
-
+          
 }
 
 onInputchange = (event) => {
@@ -90,7 +85,6 @@ viewpokestats = () => {
 
 clicked = (value) => {
   console.log('clicked')
-  console.log() 
   this.setState({route : 'search'})
   this.setState({searchNumber:value.target.id})
 }
@@ -98,7 +92,7 @@ clicked = (value) => {
 
 render() {
     
-    const fetcher = (x) => { 
+    const searchPokemon = (x) => { 
       if(x && x < 386) {
       
       this.state.pokemon = this.state.allPokemon[x];
@@ -114,10 +108,12 @@ render() {
 
      }}
 
-    fetcher(this.state.searchNumber)
+    searchPokemon(this.state.searchNumber)
 
     return( 
-      <div>
+      
+      <div className = 'mainContainer'>
+        {!this.state.mounted ? <div className="loader">LOADING...</div> :
         <div className= "tc">
           <div className="dib br3 ma4 shadow-5 bg-near-white">
             <h1 className=" f1 ttu pa3">Gotta Catch Em' All</h1>
@@ -131,8 +127,8 @@ render() {
               </div>
             </div> 
           
-            :  
-          
+            :
+
             <div>
               <BackToSearchButton buttonclick={this.viewpokestats}/>
               <Scroll >
@@ -142,6 +138,7 @@ render() {
             
           </div>
         </div>
+        }
       </div>
     );
 }
